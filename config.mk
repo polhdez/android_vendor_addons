@@ -14,47 +14,6 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/addons/overlay/common
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/addons/overlay/common/packages/apps/Launcher3
-
-ifeq ($(TARGET_HAS_UDFPS),true)
-PRODUCT_PACKAGES += \
-    UdfpsIcons \
-    UdfpsAnimations
-endif
-
-PRODUCT_COPY_FILES += \
-    vendor/addons/prebuilt/product/etc/sysconfig/ambient_data.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/ambient_data.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/dialer_experience.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/dialer_experience.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/google_build.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_build.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/google-initial-package-stopped-states.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-initial-package-stopped-states.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/nga.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nga.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2017-initial-package-stopped-states.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2017-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2018-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2019-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2024-and-newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_pixel_experience_2017_and_newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_pixel_experience_2021_and_newer.xml \
-    vendor/addons/prebuilt/product/etc/sysconfig/preinstalled_packages_repair_mode.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled_packages_repair_mode.xml
-
-# Clocks
-PRODUCT_PACKAGES += \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-Metro \
-    SystemUIClocks-NumOverlap
-
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
@@ -186,121 +145,6 @@ PRODUCT_PACKAGES += \
     FontSurferOverlay \
     FontUbuntuOverlay
 
-# Icon Packs
-PRODUCT_PACKAGES += \
-    IconPackCircularAndroidOverlay \
-    IconPackCircularLauncherOverlay \
-    IconPackCircularSystemUIOverlay \
-    IconPackCircularThemePickerOverlay \
-    IconPackVictorAndroidOverlay \
-    IconPackVictorLauncherOverlay \
-    IconPackVictorSystemUIOverlay \
-    IconPackVictorThemePickerOverlay \
-    IconPackSamAndroidOverlay \
-    IconPackSamLauncherOverlay \
-    IconPackSamSystemUIOverlay \
-    IconPackSamThemePickerOverlay \
-    IconPackKaiAndroidOverlay \
-    IconPackKaiLauncherOverlay \
-    IconPackKaiSystemUIOverlay \
-    IconPackKaiThemePickerOverlay \
-    IconPackFilledAndroidOverlay \
-    IconPackFilledLauncherOverlay \
-    IconPackFilledSystemUIOverlay \
-    IconPackFilledThemePickerOverlay \
-    IconPackPUIAndroidOverlay \
-    IconPackPUILauncherOverlay \
-    IconPackPUISystemUIOverlay \
-    IconPackPUIThemePickerOverlay \
-    IconPackRoundedAndroidOverlay \
-    IconPackRoundedLauncherOverlay \
-    IconPackRoundedSystemUIOverlay \
-    IconPackRoundedThemePickerOverlay \
-    IconPackNostalgicAndroidOverlay \
-    IconPackNostalgicLauncherOverlay \
-    IconPackNostalgicSystemUIOverlay \
-    IconPackNostalgicThemePickerOverlay \
-    IconPackOOSAndroidOverlay \
-    IconPackOOSLauncherOverlay \
-    IconPackOOSSystemUIOverlay \
-    IconPackOOSThemePickerOverlay \
-    IconPackOutlineAndroidOverlay \
-    IconPackOutlineLauncherOverlay \
-    IconPackOutlineSystemUIOverlay \
-    IconPackAcherusAndroidOverlay \
-    IconPackAcherusLauncherOverlay \
-    IconPackAcherusSystemUIOverlay \
-    IconPackAuroraAndroidOverlay \
-    IconPackAuroraSystemUIOverlay \
-    IconPackGradiconAndroidOverlay \
-    IconPackGradiconSystemUIOverlay \
-    IconPackPlumpySystemUIOverlay \
-    IconPackPlumpyAndroidOverlay \
-    IconPackXperiaAndroidOverlay \
-    IconPackXperiaSystemUIOverlay
-
-# Icon Shapes
-PRODUCT_PACKAGES += \
-    IconShapeArchOverlay \
-    IconShapeCylinderOverlay \
-    IconShapeIosOverlay \
-    IconShapeLeafOverlay \
-    IconShapePebbleOverlay \
-    IconShapeSamsungOverlay \
-    IconShapeStretchedOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeTeardropOverlay
-
-# Navbar styles
-PRODUCT_PACKAGES += \
-    NavbarAndroidOverlay \
-    NavbarAsusOverlay \
-    NavbarMotoOverlay \
-    NavbarNexusOverlay \
-    NavbarOldOverlay \
-    NavbarOnePlusOverlay \
-    NavbarOneUiOverlay \
-    NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay
-
-# Signal Icons
-PRODUCT_PACKAGES += \
-    BarsSignalOverlay \
-    CircleSignalOverlay \
-    GradiconSignalOverlay \
-    IosSignalOverlay \
-    NothingDotSignalOverlay \
-    RoundSignalOverlay \
-    StrokeSignalOverlay \
-    WannuiSignalOverlay \
-    XperiaSignalOverlay \
-    ZigZagSignalOverlay \
-    PlumpySignalOverlay
-
-# WiFi Icons
-PRODUCT_PACKAGES += \
-    BarsWiFiOverlay \
-    GradiconWiFiOverlay \
-    NothingDotWiFiOverlay \
-    RoundWiFiOverlay \
-    StrokeWiFiOverlay \
-    XperiaWiFiOverlay \
-    ZigZagWiFiOverlay \
-    PlumpyWiFiOverlay
-
-# Themes
-PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
-
-# Lawnicons
-PRODUCT_PACKAGES += \
-    Lawnicons
-
-# QS
-PRODUCT_PACKAGES += \
-    QSNos \
-    QSDualTone
-
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
@@ -308,5 +152,3 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/addons/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
-# Bootanimation
-include vendor/addons/prebuilt/bootanimation/bootanimation.mk
