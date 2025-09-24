@@ -1,5 +1,6 @@
 prebuilt_etc {
     name: "fonts_customization.xml",
     src: "fonts_customization.xml",
+    priority: 99,  // Higher number = higher priority,
     product_specific: true,
 }
