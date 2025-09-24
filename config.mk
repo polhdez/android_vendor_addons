@@ -371,8 +371,11 @@ PRODUCT_PACKAGES += \
 	PlumpyWiFiOverlay
 
 # Themes
+#PRODUCT_PACKAGES += \
+#    AndroidBlackThemeOverlay
+
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
+    LineageBlackTheme
 
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
