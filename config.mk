@@ -62,7 +62,6 @@ PRODUCT_PACKAGES += \
     ClockFontKaramuruhOverlay \
     ClockFontKingthingsOverlay \
     ClockFontLMSCliffordOverlay \
-    ClockFontLatoOverlay \
     ClockFontLinotteOverlay \
     ClockFontLittleBunnyOverlay \
     ClockFontLowerAtmosphereOverlay \
@@ -89,7 +88,6 @@ PRODUCT_PACKAGES += \
     ClockFontRobotoCondensedOverlay \
     ClockFontRomantiquesOverlay \
     ClockFontRoundheadsOverlay \
-    ClockFontRubikOverlay \
     ClockFontSamsungOneOverlay \
     ClockFontSansSerifOverlay \
     ClockFontScrapItUpOverlay \
@@ -122,7 +120,6 @@ PRODUCT_PACKAGES += \
     FontGrandHotelOverlay \
     FontGoogleSansFlexOverlay \
     FontHarmonySansOverlay \
-    FontLatoOverlay \
     FontLinotteOverlay \
     FontNokiaPureOverlay \
     FontNothingDotHeadlineOverlay \
@@ -136,7 +133,6 @@ PRODUCT_PACKAGES += \
     FontRedressedOverlay \
     FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
-    FontRubikOverlay \
     FontSanFranciscoDisplayProSourceOverlay \
     FontSamsungOneOverlay \
     FontSansSerifOverlay \
