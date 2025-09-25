@@ -39,15 +39,15 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/addons/overlay/common
 #   vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2022-and-newer.xml \
 #   vendor/addons/prebuilt/product/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-product-pixel-2023-and-newer.xml
 
-# Clocks
-PRODUCT_PACKAGES += \
-    SystemUIClocks-BigNum \
-    SystemUIClocks-Calligraphy \
-    SystemUIClocks-Flex \
-    SystemUIClocks-Growth \
-    SystemUIClocks-Inflate \
-    SystemUIClocks-Metro \
-    SystemUIClocks-NumOverlap
+## Clocks
+#PRODUCT_PACKAGES += \
+#    SystemUIClocks-BigNum \
+#    SystemUIClocks-Calligraphy \
+#    SystemUIClocks-Flex \
+#    SystemUIClocks-Growth \
+#    SystemUIClocks-Inflate \
+#    SystemUIClocks-Metro \
+#    SystemUIClocks-NumOverlap
 
 # Fonts
 PRODUCT_PACKAGES += \
