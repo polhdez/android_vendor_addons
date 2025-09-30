@@ -339,8 +339,7 @@ PRODUCT_PACKAGES += \
 
 # Preinstalled Apps
 PRODUCT_PACKAGES += \
-    Droid-ify \
-    AuroraStore
+    Droid-ify
 
 PRODUCT_PACKAGES += \
     LineageBlackTheme
