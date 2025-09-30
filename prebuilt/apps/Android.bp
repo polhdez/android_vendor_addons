@@ -14,7 +14,7 @@ android_app_import {
 
 // Aurora Store to provide GPlay
 android_app_import {
-    name: "Aurora Store",
+    name: "AuroraStore",
     apk: "com.aurora.store.apk",
     presigned: true,
     dex_preopt: {
