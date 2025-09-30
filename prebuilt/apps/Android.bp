@@ -21,7 +21,6 @@ android_app_import {
     apk: "com.aurora.store.apk",
     presigned: true,
     preprocessed: true,
-    extract_jni: true,
     privileged: false,
     product_specific: true,
     dex_preopt: {
