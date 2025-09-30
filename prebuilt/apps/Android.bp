@@ -1,0 +1,23 @@
+//
+// Prebuilt apps for fork lineage
+//
+
+// Droid-ify to provide F-Droid
+android_app_import {
+    name: "Droid-ify",
+    apk: "com.looker.droidify.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
+
+// Aurora Store to provide GPlay
+android_app_import {
+    name: "Aurora Store",
+    apk: "com.aurora.store.apk",
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
