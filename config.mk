@@ -337,9 +337,10 @@ PRODUCT_PACKAGES += \
 	ForlornWiFiOverlay \
 	PlumpyWiFiOverlay
 
-# Themes
-#PRODUCT_PACKAGES += \
-#    AndroidBlackThemeOverlay
+# Preinstalled Apps
+PRODUCT_PACKAGES += \
+    Droid-ify \
+    AuroraStore
 
 PRODUCT_PACKAGES += \
     LineageBlackTheme
