@@ -7,6 +7,7 @@ android_app_import {
     name: "Droid-ify",
     apk: "com.looker.droidify.apk",
     presigned: true,
+    preprocessed: true,
     dex_preopt: {
         enabled: false,
     },
@@ -17,6 +18,7 @@ android_app_import {
     name: "AuroraStore",
     apk: "com.aurora.store.apk",
     presigned: true,
+    preprocessed: true,
     dex_preopt: {
         enabled: false,
     },
